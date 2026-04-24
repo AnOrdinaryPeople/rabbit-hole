@@ -27,9 +27,5 @@ cd "ffmpeg-${FFMPEG_VERSION}"
   make -j$(nproc) && \
   make install
 
-make -j"$(nproc)"
-sudo make install
-sudo ldconfig
-
 echo "FFmpeg ${FFMPEG_VERSION} installed to ${PREFIX}"
 rm -rf "$BUILD_DIR/ffmpeg-${FFMPEG_VERSION}"*
